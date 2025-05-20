@@ -16,163 +16,185 @@
   <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
-<body class="main-bg">
+<body>
+
+<input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+<label class="close-menu-label" for="close-menu" title="close menu"></label>
   <aside class="menu white-bg">
     <div class="main-content menu-content">
-      <h1>
-        <a href="#home">LOGO</a>
+      <h1 onclick="getElementById('close-menu').checked = false;">
+        <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="35.5" fill="#1a3e5d"
+            viewBox="0 0 24 24">
+            <path d="M12 3l10 9h-3v9h-6v-6H11v6H5v-9H2z" />
+          </svg>
+        </a>
       </h1>
       <nav>
-        <ul>
+        <ul onclick="getElementById('close-menu') .checked = false;">
           <li><a href="#intro">Intro</a></li>
-          <li><a href="#grid-one">My Grid</a></li>
+          <li><a href="#grid-one">Top 3</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#grid-two">Work</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </aside>
 
-  <div id="home" class="menu-spacing">
+  <div class="menu-spacing"></div>
+
+  <section id="home" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>Your Dream Home Await</h2>
+        <p>At BrightNest Realty, we know a home is more than just a place — it's where your story begins. That’s why
+          we’re here to help you find the perfect space to match your lifestyle and goals.
+
+          From cozy apartments to spacious family homes, we offer a range of properties tailored to your needs. With
+          expert guidance and a personal touch, your dream home is closer than ever.
+
+        </p>
+      </div>
+      <div class="intro-img">
+        <img src="assets/img/main-house.svg" alt="Logo de HTML, CSS E JS.">
+      </div>
     </div>
+  </section>
 
-    <section class="intro main-bg section">
-      <div class="main-content intro-content">
-        <div class="intro-text-content">
-          <h2>January brings us Firefox 85</h2>
-          <p>To wrap up January, we are proud to bring you the release of Firefox 85. In this version we are bringing
-            you support for the :focus-visible pseudo-class in CSS and associated devtools, and the complete removal of
-            Flash support from Firefox.</p>
-        </div>
-        <div class="intro-img">
-          <img src="assets/img/img-intro.svg" alt="Logo de HTML, CSS E JS.">
-        </div>
+  <section id="intro" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>Welcome to BrightNest Realty</h2>
+      <p>At BrightNest Realty, we believe that every home is the foundation of a brighter future. Whether you're
+        searching for your first apartment, your dream family home, or the perfect investment property, our team is here
+        to guide you every step of the way. With deep roots in the local community and years of real estate expertise,
+        we take pride in delivering more than just transactions — we build relationships based on trust, transparency,
+        and results.</p>
+      <p>Our approach is personal and client-focused. We understand that buying or selling a property is one of life’s
+        most significant decisions, and we don’t take that lightly. That’s why we work closely with you to understand
+        your unique needs, preferences, and goals. From customized property searches and expert market insights to
+        skilled negotiation and seamless closing support, our goal is to make the entire process as smooth and rewarding
+        as possible.</p>
+      <p>At BrightNest Realty, we go beyond the basics of real estate. We provide you with knowledge, confidence, and
+        peace of mind. Whether you're relocating, downsizing, investing, or buying your very first home, we’re honored
+        to be part of your journey. Let us help you discover not just a property, but a place to truly call home — a
+        bright nest where your future can flourish.</p>
+    </div>
+  </section>
+
+  <section id="grid-one" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Top 3 Properties</h2>
+      <p class="grid-description">Discover our most popular listings — handpicked for their quality, location, and
+        value. Whether you're searching for a city apartment, a family-friendly home, or a luxury escape, these top
+        properties offer something for every lifestyle.</p>
+      <div class="grid">
+        <article>
+          <h3>Modern City Apartment</h3>
+          <p>Live in the heart of the city with this stylish 2-bedroom apartment. Perfect for young professionals or
+            couples.
+            $320,000 – 85 m² – 2 Beds / 1 Bath</p>
+        </article>
+        <article>
+          <h3>Family House in Suburbs</h3>
+          <p>Spacious and cozy, this 4-bedroom house offers a large backyard and peaceful neighborhood.
+            $480,000 – 210 m² – 4 Beds / 3 Baths</p>
+        </article>
+        <article>
+          <h3>Luxury Beachfront Villa</h3>
+          <p>Experience elegance and comfort in this stunning villa with ocean views and private pool.
+            $1,250,000 – 350 m² – 5 Beds / 5 Baths</p>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="intro" class="white-bg section">
-      <div class="main-content top3-content">
-        <h2>TOP 3 jobs</h2>
-        <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some
-          surprises at the machine’s performance. This post details some background information on the experience of
-          porting Firefox to run natively on these CPUs.</p>
-        <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed
-          to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
-        <p>We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and
-          discuss various updater problems we had to deal with. We’ll conclude with the release and an overview of
-          various other improvements that are in the pipeline.</p>
-      </div>
-    </section>
-
-    <section id="grid-one" class="grid-one main-bg section">
-      <div class="main-content grid-one-content">
-        <h2 class="grid-main-heading">My Grid</h2>
-        <p class="grid-description">Uma breve descrição</p>
-        <div class="grid">
-          <article>
-            <h3>Texto 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe cupiditate, necessitatibus, aliquam in
-              voluptatem velit impedit sapiente eaque cumque voluptate possimus porro rem dignissimos at, accusantium
-              quod.
-              Enim, vel totam.</p>
-          </article>
-          <article>
-            <h3>Texto 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe cupiditate, necessitatibus, aliquam in
-              voluptatem velit impedit sapiente eaque cumque voluptate possimus porro rem dignissimos at, accusantium
-              quod.
-              Enim, vel totam.</p>
-          </article>
-          <article>
-            <h3>Texto 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe cupiditate, necessitatibus, aliquam in
-              voluptatem velit impedit sapiente eaque cumque voluptate possimus porro rem dignissimos at, accusantium
-              quod.
-              Enim, vel totam.</p>
-          </article>
+  <section id="gallery" class="grid-one white-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Gallery</h2>
+      <p class="grid-description">Explore our curated gallery of stunning properties that showcase the variety and
+        beauty of the homes we offer at BrightNest Realty. From modern architecture to cozy family residences and
+        luxurious retreats, each photo reflects our commitment to quality and design. Get inspired and find the style
+        that speaks to your future home.</p>
+      <div class="grid">
+        <div class="gallery-img">
+          <img
+            src="https://media.discordapp.net/attachments/837797234707267604/1373021804016439396/sao-jose-dos-campos-casas-condominio-urbanova-08-08-2023_11-23-39-0.png?ex=682c3173&is=682adff3&hm=16edfc044c2605800f7383e1dede17260ba796185cc57dcfaa5a31c2ad526694&=&format=webp&quality=lossless"
+            alt="random imagem">
         </div>
-      </div>
-    </section>
-
-    <section id="gallery" class="grid-one white-bg section">
-      <div class="main-content grid-one-content">
-        <h2 class="grid-main-heading">Gallery</h2>
-        <p class="grid-description">Uma breve descrição</p>
-        <div class="grid">
-          <div class="gallery-img">
-            <img
-              src="https://media.discordapp.net/attachments/837797234707267604/1373021804016439396/sao-jose-dos-campos-casas-condominio-urbanova-08-08-2023_11-23-39-0.png?ex=6828e5b3&is=68279433&hm=f36020b3219b7b5b6661e83e46491ecb4ba9883168da96dfe4454eec7eee87a7&=&format=webp&quality=lossless"
-              alt="random imagem">
-          </div>
-          <div class="gallery-img">
-            <img
-              src="https://media.discordapp.net/attachments/837797234707267604/1373025601253933098/foto-que-mostra-uma-casa_931878-222834.png?ex=6828e93c&is=682797bc&hm=9b460ff27501794f32bef1b67f1e6469a8a11aaa1150306a0ed0383ffbd18759&=&format=webp&quality=lossless"
-              alt="random imagem">
-          </div> 
-          <div class="gallery-img">
-           <img
-              src="https://media.discordapp.net/attachments/837797234707267604/1373025742212042942/botucatu-casa-residencia-livia-iii-12-04-2023_11-48-03-1.png?ex=6828e95e&is=682797de&hm=99c967927286442d648f249603edbcaa970d9efefb71488ce1729e892ba0b9aa&=&format=webp&quality=lossless"
-              alt="random imagem">
-          </div>
-                 <div class="gallery-img">
-            <img
-              src="https://media.discordapp.net/attachments/837797234707267604/1373025981950066698/bauru-casa-sobrado-jardim-rosa-branca-17-10-2022_14-59-14-0.png?ex=6828e997&is=68279817&hm=a9a41ae347d32407a91f50815cefb19355594b08f915bef3b0b39491cf62a689&=&format=webp&quality=lossless&width=350&height=350"
-              alt="random imagem">
-          </div>
-          <div class="gallery-img">
-            <img
-              src="https://media.discordapp.net/attachments/837797234707267604/1373026147872542852/638413582654189.png?ex=6828e9bf&is=6827983f&hm=d1e04668902486462a0c3f331c9e733f58083b2d14189d4339ca75a7b7db6827&=&format=webp&quality=lossless"
-              alt="random imagem">
-          </div> 
-          <div class="gallery-img">
-           <img
-              src="https://media.discordapp.net/attachments/837797234707267604/1373026260477018202/M158353.png?ex=6828e9da&is=6827985a&hm=0fdfcf3f7ae32221edf6b7b548df3d55ce89e0c8f65b8de375e3803a2a3af8a4&=&format=webp&quality=lossless"
-              alt="random imagem">
-          </div>
+        <div class="gallery-img">
+          <img
+            src="https://media.discordapp.net/attachments/837797234707267604/1373025601253933098/foto-que-mostra-uma-casa_931878-222834.png?ex=682c34fc&is=682ae37c&hm=d98f749bf74b049e3388d56375e81a7b899168eeb0c1fadc6600596b7a82501b&=&format=webp&quality=lossless"
+            alt="random imagem">
+        </div>
+        <div class="gallery-img">
+          <img
+            src="https://media.discordapp.net/attachments/837797234707267604/1373025742212042942/botucatu-casa-residencia-livia-iii-12-04-2023_11-48-03-1.png?ex=682c351e&is=682ae39e&hm=6facf451cb3b8d433b07d5b0e69d459d441016e05dbd3d04cde5a9ec1053d437&=&format=webp&quality=lossless"
+            alt="random imagem">
+        </div>
+        <div class="gallery-img">
+          <img
+            src="https://media.discordapp.net/attachments/837797234707267604/1373025981950066698/bauru-casa-sobrado-jardim-rosa-branca-17-10-2022_14-59-14-0.png?ex=682c3557&is=682ae3d7&hm=57256b556140881e050d22aa6b83cc8dea4eecab1cbac35c517288dc2cf1e490&=&format=webp&quality=lossless&width=350&height=350"
+            alt="random imagem">
+        </div>
+        <div class="gallery-img">
+          <img
+            src="https://media.discordapp.net/attachments/837797234707267604/1373026147872542852/638413582654189.png?ex=682c357f&is=682ae3ff&hm=435eb5844d0c03fc9adc428f87e5e814c0490dc029e8e05ca0ca235407c0b7ec&=&format=webp&quality=lossless&width=350&height=350"
+            alt="random imagem">
+        </div>
+        <div class="gallery-img">
+          <img
+            src="https://media.discordapp.net/attachments/837797234707267604/1373026260477018202/M158353.png?ex=682c359a&is=682ae41a&hm=006a3f524e32b9320fe9eb8f09f79db1e374c361de945979bdd4fa28c3b023b4&=&format=webp&quality=lossless"
+            alt="random imagem">
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="grid-two" class="grid-one main-bg section">
-      <div class="main-content grid-one-content">
-        <h2 class="grid-main-heading">Recent Jobs</h2>
-        <p class="grid-description">Uma breve descrição</p>
-        <div class="grid">
-          <article>
-            <h3>A good one</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe cupiditate, necessitatibus, aliquam in
-              voluptatem velit impedit sapiente eaque cumque voluptate possimus porro rem dignissimos at, accusantium
-              quod.
-              Enim, vel totam.</p>
-          </article>
-          <article>
-            <h3>Great job</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe cupiditate, necessitatibus, aliquam in
-              voluptatem velit impedit sapiente eaque cumque voluptate possimus porro rem dignissimos at, accusantium
-              quod.
-              Enim, vel totam.</p>
-          </article>
-          <article>
-            <h3>The best</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe cupiditate, necessitatibus, aliquam in
-              voluptatem velit impedit sapiente eaque cumque voluptate possimus porro rem dignissimos at, accusantium
-              quod.
-              Enim, vel totam.</p>
-          </article>
-        </div>
+  <section id="grid-two" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Recent Jobs</h2>
+      <p class="grid-description">Take a look at some of our most recent accomplishments. At BrightNest Realty, we take
+        pride in every project — from modern home constructions to full-scale renovations and luxury listings. Each job
+        reflects our dedication to quality, attention to detail, and commitment to client satisfaction.</p>
+      <div class="grid">
+        <article>
+          <h3>Modern Suburban Home</h3>
+          <p>We recently completed the sale of a newly built 3-bedroom modern home located in a peaceful suburban
+            neighborhood. Featuring open-concept living, energy-efficient fixtures, and sleek contemporary design, this
+            home was ideal for a young family looking for comfort, style, and community. It sold within two weeks of
+            listing, above asking price.</p>
+        </article>
+        <article>
+          <h3>Downtown Luxury Apartment</h3>
+          <p>Our team helped a client acquire a luxury apartment in the heart of the city with stunning skyline views.
+            This high-end property includes premium finishes, concierge services, and access to exclusive amenities.
+            With our market knowledge and negotiation skills, we secured the best deal possible in a competitive
+            environment.</p>
+        </article>
+        <article>
+          <h3>Renovated Family Residence</h3>
+          <p>We successfully managed the renovation and listing of a charming 4-bedroom family house. Our upgrades
+            included a modern kitchen, refreshed landscaping, and smart home features. After transformation, the home
+            gained significant market value and attracted multiple offers within days of going live.</p>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
- <section id="pricing" class="white-bg section">
+  <section id="pricing" class="white-bg section">
     <div class="main-content top3-content">
       <h2>Pricing</h2>
-      <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some
-        surprises at the machine’s performance. This post details some background information on the experience of
-        porting Firefox to run natively on these CPUs.</p>
-      <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to
-        know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+      <p>At BrightNest Realty, we believe that transparent and flexible pricing is key to building trust with our
+        clients. Our pricing model is designed to accommodate a wide range of needs—from first-time buyers to investors
+        and property developers—ensuring you only pay for the services that truly matter to you.</p>
+      <p>We offer tiered packages that include options such as property listing, professional photography, home staging
+        consultation, legal assistance, and personalized market analysis. Whether you’re looking to sell, buy, or rent,
+        our solutions are tailored to your goals, budget, and timeline. Each package is structured to provide maximum
+        value and return on your investment.</p>
+      <p>For clients with unique demands, we also provide custom quotes. This way, you're guaranteed a pricing structure
+        that reflects your specific requirements. Get in touch with our team to explore the best plan for your situation
+        and receive a no-obligation consultation today.</p>
 
       <div class="responsive-table">
         <table>
@@ -225,6 +247,57 @@
       </div>
     </div>
   </section>
+
+  <section id="contact" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>Contact us</h2>
+        <p>Contact our team to ask questions, request information or start a partnership. We are ready to help you with
+          agility, professionalism and personalized attention. Fill out the form below and we will get back to you as
+          soon as possible.</p>
+      </div>
+      <div class="intro-img">
+        <img src="assets/img/contact-us.svg" alt="Logo de HTML, CSS e JS.">
+      </div>
+      <div class="contact-form">
+        <fieldset class="form-grid">
+          <legend>Contact me</legend>
+
+          <div class="form-group">
+            <label for="first-name">First name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Your name">
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">Last name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Your e-mail">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <button type="submit">Send message</button>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="footer" class=" footer white-bg">
+    <p><a target="_blank" href="https://github.com/Miguuuuuu?tab=repositories">Feito com <span class="heart">❤</span>
+        por Migu</a></p>
+  </footer>
+
+  <a class="back-to-top" href="#home">➤</a>
 </body>
 
 </html>
